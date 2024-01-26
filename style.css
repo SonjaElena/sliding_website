@@ -1,0 +1,21 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: monospace;
+}
+
+.top {
+  background-color: grey;
+  padding: 15px;
+  text-align: center;
+}
+
+body {
+  margin: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+}
