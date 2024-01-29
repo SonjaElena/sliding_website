@@ -1,41 +1,93 @@
 html {
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 * {
   margin: 0px;
   border: 0px;
   padding: 0px;
+  outline: 0px;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
+/* header */
 header {
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10%;
+  padding: 0px 10%;
+  border-bottom: 1px solid black;
+  width: 100%;
 }
 
 header img {
   margin-left: 5px;
 }
 
-ul {
+header ul li {
   list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  text-decoration: none;
 }
 
-li {
-  display: inline;
-  margin-right: 10px;
+head ul li:last-child {
+  margin-right: 0;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 22px 0;
+  display: inline-block;
+  font-size: 18px;
 }
 
 .nav_links li a:hover {
-  color: blueviolet;
+  text-decoration: underline;
+  color: grey;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
 }
 
+/* header - submenu */
+header ul .submenu {
+  position: absolute;
+  width: 200px;
+  background-color: whitesmoke;
+  box-shadow: 0 20px 45px black;
+  margin-top: -50px;
+  opacity: 0;
+  z-index: -999;
+  transition: all ease 0.5s;
+}
+
+header ul li:hover .submenu {
+  z-index: 99;
+  opacity: 1;
+  margin-top: 0;
+}
+
+header ul .submenu li {
+  margin: 0;
+  width: 100%;
+}
+
+header ul .submenu li a {
+  padding: 15px 20px;
+  display: inline-block;
+  width: 100%;
+}
+
+/* main image and button */
 .image-container {
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container img {
@@ -78,4 +130,6 @@ li {
   left: 80%;
   padding: 20px 40px;
   text-align: right;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
