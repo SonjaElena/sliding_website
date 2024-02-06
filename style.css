@@ -1,13 +1,22 @@
+@media print {
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Global settings */
 html {
-  font-family: "Roboto", sans-serif;
   color: black;
-}
-
-body {
+  height: 100%;
   width: 100%;
-  height: 50%;
+  font-family: "Comic Neue";
 }
-
 * {
   margin: 0px;
   border: 0px;
@@ -17,21 +26,22 @@ body {
   overflow-x: hidden;
 }
 
-/* header */
+/* Header */
 header {
-  background-color: white;
   display: flex;
+  background-color: white;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 10%;
+  padding: 0% 5%;
   border-bottom: 1px solid black;
-  width: 100%;
+  font-size: 32px;
 }
 
 header img {
-  margin-left: 5px;
+  height: 4em;
 }
 
+/* Header - Dropdown - main */
 header ul li {
   list-style: none;
   display: inline-block;
@@ -48,7 +58,7 @@ header ul li a {
   color: black;
   padding: 22px 0;
   display: inline-block;
-  font-size: 18px;
+  font-size: 32px;
 }
 
 .nav_links li a:hover {
@@ -58,7 +68,7 @@ header ul li a {
   cursor: pointer;
 }
 
-/* header - submenu */
+/* Header - Dropdown - submenu */
 header ul .submenu {
   position: absolute;
   width: 200px;
@@ -75,7 +85,6 @@ header ul li:hover .submenu {
   opacity: 1;
   margin-top: 0;
 }
-
 header ul .submenu li {
   margin: 0;
   width: 100%;
@@ -87,37 +96,24 @@ header ul .submenu li a {
   width: 100%;
 }
 
-/* footer */
-
+/* Footer */
 footer {
-  background-color: white;
-  display: flex;
+  display: relative;
   justify-content: space-between;
+  background-color: white;
   align-items: center;
-  padding: 0px 10%;
-  border-bottom: 1px solid black;
+  padding: 0% 5%;
+  border-top: 1px solid black;
   width: 100%;
+  height: 10%;
 }
 
-/* main image and button */
-.image-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-container img {
-  /* width: auto;
-  height: auto;
-  display: block; */
-  object-fit: cover;
-}
-
+/* Main - text */
 .overlay-text2 {
   background-color: transparent;
   color: white;
-  font-size: 40px;
+  font-size: 48px;
+  font-weight: 700;
   position: absolute;
   top: 70%;
   right: 7%;
@@ -135,7 +131,6 @@ footer {
   padding: 20px 40px;
   text-align: right;
 }
-
 .overlay-text1:hover {
   background-color: transparent;
   border: 3px;
@@ -150,4 +145,15 @@ footer {
   text-align: right;
   cursor: pointer;
   transition: all 0.3s ease 0s;
+}
+
+/* Main - Image */
+main {
+  width: 100vw;
+  height: 85vh;
+  background-image: url(https://image.stern.de/32794602/t/yQ/v5/w1440/r1.7778/-/welt-tag-des-oktopus-krake.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
 }
