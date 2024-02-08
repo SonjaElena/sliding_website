@@ -176,15 +176,6 @@ footer {
   border-radius: 0.5rem;
 }
 
-/* .slider .slide {
-  width: 100vw;
-  height: 85vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-  background-size: cover;
-} */
-
 .slider .slide {
   flex: 1 0 100%;
   scroll-snap-align: start;
@@ -194,7 +185,6 @@ footer {
 
 main img {
   display: block;
-  align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
@@ -203,21 +193,6 @@ main img {
   width: 100rem;
   height: auto;
 }
-/* 
-.slider .slide:nth-child(1) {
-  background-image: url(https://image.stern.de/32794602/t/yQ/v5/w1440/r1.7778/-/welt-tag-des-oktopus-krake.jpg);
-  animation-delay: 0;
-}
-
-.slider .slide:nth-child(2) {
-  background-image: url(https://i0.wp.com/www.zoologytalks.com/wp-content/uploads/2023/06/IMG_2970.jpeg);
-  animation-delay: -2s;
-}
-
-.slider .slide:nth-child(3) {
-  background-image: url(https://media.istockphoto.com/id/92252755/photo/belize-sponges.jpg?s=612x612&w=0&k=20&c=Zmx9_qnIEz1WPPWZ74OYvIUc0e3LgAn3L1jKcFYlNaU=);
-  animation-delay: -4s;
-} */
 
 .slider-nav {
   display: flex;
