@@ -9,29 +9,15 @@
     width: 100%;
   }
 }
-@keyframes slide {
-  0%,
-  15%,
-  100% {
-    transform: translateX(0);
-    animation-timing-function: ease;
-  }
-  20% {
-    transform: translateX(-100%);
-    animation-timing-function: step-end;
-  }
-  95% {
-    transform: translateX(100%);
-    animation-timing-function: ease;
-  }
-}
 
 /* Global settings */
-html {
+html,
+body {
   color: black;
-  height: 100%;
-  width: 100%;
   font-family: "Comic Neue";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 * {
   margin: 0px;
@@ -114,16 +100,14 @@ header ul .submenu li a {
 
 /* Footer */
 footer {
-  display: relative;
-  justify-content: space-between;
+  margin-top: auto;
   background-color: white;
-  align-items: center;
   padding: 0% 5%;
   border-top: 1px solid black;
   width: 100%;
-  height: 10%;
   font-size: 20px;
-  bottom: 1rem;
+  left: 0;
+  bottom: 0;
 }
 
 /* Main - text */
@@ -151,9 +135,7 @@ footer {
 }
 .overlay-text1:hover {
   background-color: transparent;
-  border: 3px;
-  border-color: white;
-  border-style: solid;
+  border: 3px solid white;
   color: white;
   font-size: 26px;
   position: absolute;
@@ -190,7 +172,7 @@ main img {
   margin-top: auto;
   margin-bottom: auto;
   object-fit: fill;
-  width: 100rem;
+  /* width: 100%; */
   height: auto;
 }
 
