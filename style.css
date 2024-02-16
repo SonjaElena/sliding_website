@@ -14,7 +14,7 @@
 html,
 body {
   color: black;
-  font-family: "Comic Neue";
+  font-family: "Poppings", sans-serif;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -164,6 +164,7 @@ footer {
   scroll-snap-align: start;
   object-position: 50% 50%;
   object-fit: cover;
+  position: relative;
 }
 
 .slider-nav {
